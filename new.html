@@ -1,0 +1,14 @@
+<form id="myForm">
+  <input type="text" id="username" />
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+  const form = document.getElementById("myForm");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault(); // Prevent page reload
+    const username = document.getElementById("username").value;
+    alert(`Hello, ${username}`);
+  });
+</script>
